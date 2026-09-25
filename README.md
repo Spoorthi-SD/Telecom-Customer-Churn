@@ -100,55 +100,71 @@ Users can enter customer details and obtain:
 
 ## Project Structure
 
-Telecom_Customer_Churn/
-│
-├── data/
-│   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
-│
-├── model/
-│   ├── churn_model.pkl
-│   ├── feature_names.pkl
-│   └── preprocessing.pkl
-│
-├── outputs/
-│   ├── confusion_matrix.png
-│   ├── roc_curve.png
-│   ├── feature_importance.png
-│   ├── feature_coefficients.csv
-│   ├── model_comparison.csv
-│   ├── model_comparison.png
-│   ├── shap_summary.png
-│   ├── shap_feature_importance.png
-│   ├── shap_feature_importance.csv
-│   ├── shap_individual_explanation.csv
-│   ├── shap_individual_waterfall.png
-│   ├── threshold_analysis.csv
-│   └── threshold_analysis.png
-│
-├── src/
-│   ├── train_model.py
-│   ├── explainability.py
-│   ├── shap_explainability.py
-│   ├── shap_individual.py
-│   ├── threshold_analysis.py
-│   └── save_preprocessing.py
-│
-├── app.py
-├── requirements.txt
-├── .gitignore
-└── README.md
+    Telecom_Customer_Churn/
+    │
+    ├── data/
+    │   └── WA_Fn-UseC_-Telco-Customer-Churn.csv
+    │
+    ├── model/
+    │   ├── churn_model.pkl
+    │   ├── feature_names.pkl
+    │   └── preprocessing.pkl
+    │
+    ├── outputs/
+    │   ├── X_train.csv
+    │   ├── X_test.csv
+    │   ├── y_train.csv
+    │   ├── y_test.csv
+    │   ├── churn_by_contract.png
+    │   ├── churn_by_internet.png
+    │   ├── churn_by_payment_method.png
+    │   ├── churn_distribution.png
+    │   ├── churn_percentage.png
+    │   ├── confusion_matrix.png
+    │   ├── feature_coefficients.csv
+    │   ├── feature_importance.png
+    │   ├── model_comparison.csv
+    │   ├── model_comparison.png
+    │   ├── monthly_charges_by_churn.png
+    │   ├── roc_curve.png
+    │   ├── shap_feature_importance.csv
+    │   ├── shap_feature_importance.png
+    │   ├── shap_individual_explanation.csv
+    │   ├── shap_individual_waterfall.png
+    │   ├── shap_summary.png
+    │   ├── tenure_by_churn.png
+    │   ├── threshold_analysis.csv
+    │   ├── threshold_analysis.png
+    │   └── total_charges_by_churn.png
+    │
+    ├── src/
+    │   ├── data_analysis.py
+    │   ├── eda.py
+    │   ├── explainability.py
+    │   ├── feature_engineering.py
+    │   ├── model_comparison.py
+    │   ├── save_preprocessing.py
+    │   ├── shap_explainability.py
+    │   ├── shap_individual.py
+    │   ├── threshold_analysis.py
+    │   └── train_model.py
+    │
+    ├── app.py
+    ├── requirements.txt
+    ├── .gitignore
+    └── README.md
 
 ## Installation
 
 Clone the repository and install the required dependencies:
 
-pip install -r requirements.txt
+    pip install -r requirements.txt
 
 ## Run the Application
 
 Start the Streamlit application using:
 
-streamlit run app.py
+    streamlit run app.py
 
 The application will open in the browser.
 
