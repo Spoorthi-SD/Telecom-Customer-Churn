@@ -5,6 +5,10 @@
 - Task: Telecom Customer Churn Prediction
 - Intern ID: CITS9278
 
+## Live Demo
+
+https://spoorthi-sd-telecom-customer-churn-app-bpctd2.streamlit.app/
+
 ## Project Overview
 
 This project uses Machine Learning to predict whether a telecom customer is likely to churn based on customer profile, service usage, contract, and billing information.
